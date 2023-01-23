@@ -57,7 +57,7 @@ userSchema.methods.generateAuthToken = async function () {
 };
 
 userSchema.methods.userRoleGiven = async function () {
-  // Generate an auth token for the user
+  // Give a role "user" for the new user
   const user = this;
   const role = "user";
   user.role = role;
